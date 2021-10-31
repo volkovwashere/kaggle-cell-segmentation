@@ -1,3 +1,4 @@
 environment: "dev"
 data_absolute_path: "D:/kaggle/sartorius-cell-instance-segmentation/"
 train_meta_data_path: "train.csv"
+train_image_data_path: "train/"

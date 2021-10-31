@@ -18,19 +18,19 @@ def get_root_path() -> str:
     return os.getcwd().split(work_dir)[0]
 
 
-config_logger = CustomLogger.construct_logger(name="config",
-                                              log_file_path=get_root_path() + "logs/config.log",
+config_logger = CustomLogger.construct_logger(name="CONFIG",
+                                              log_file_path=get_root_path() + "logs/CONFIG.log",
                                               logger_level=20)
 
 
 def read_yaml(*, root_path: str, config_path: str = "properties/dev.yaml") -> Union[dict, None]:
     """
-    This function reads a yaml file based on a given root_path and config file path.
+    This function reads a yaml file based on a given root_path and CONFIG file path.
     Args:
         root_path (str): Absolute root path of the project.
-        config_path (str): Relative path of config file location.
+        config_path (str): Relative path of CONFIG file location.
 
-    Returns (str): Dictionary with config key / value pairs.
+    Returns (str): Dictionary with CONFIG key / value pairs.
 
     """
     try:
